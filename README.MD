@@ -1,0 +1,1 @@
+RUN: inside a folder "backend" run command : npm run start
