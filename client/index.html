@@ -4,29 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/./faviconsfavicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>ToDo List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col"><form action="" class="form">
-        <div class="row-form">
-          <input type="text" class="title" placeholder="title" />
-          <input type="text" class="author" placeholder="author" />
-        </div>
-
-        <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="text"></textarea>
-        <button class="button">send</button>
-      </form></div>
-        <div class="col">
-          <h1 class="title-main">Posts</h1>
-          <div class="wrap"></div>
-        </div>
-      </div>
-      
-    </div>
-
-    <script src="./js/index.js"></script>
+    <div id="root"></div>
+    <script type="module" src="./js/create.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/create.js"></script>
   </body>
 </html>

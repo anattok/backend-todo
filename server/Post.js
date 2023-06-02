@@ -1,10 +1,12 @@
 import mongoose from "mongoose";
+const { Schema } = mongoose;
 
-const Post = new mongoose.Schema({
-  author: { type: String, required: true },
-  title: { type: String, required: true },
-  content: { type: String, required: true },
-  picture: { type: String },
-});
+const Todo = new Schema(
+  {
+    text: { type: String, required: true },
+    checked: { type: Boolean, required: true },
+  },
+  { versionKey: "_version" }
+);
 
-export default mongoose.model("Post", Post)
+export default mongoose.model("todo-task", Todo);
